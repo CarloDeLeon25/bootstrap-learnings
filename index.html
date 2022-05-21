@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Bootstrap Learnings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+</html>
+
+<body>
+    <div>
+        <h2>Bootstrap Containers</h2>
+        <div class="container">
+            <h3>Fixed container uses the class .container and has a fixed width.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, tempora?</p>
+        </div>
+        <div class="container-fluid">
+            <h3>.container-fluid always spans the entire width of a container.</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, consectetur.</p>
+        </div>
+        <div class="container pt-3 my-5 border">
+            <h3>This container has a padding-top, margin top and bottom, and a border. Class used are .pt-3, my-5, and
+                .border</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae architecto molestias ea
+                consequuntur,
+                cupiditate officia asperiores saepe hic possimus.</p>
+        </div>
+        <div class="container pt-3 my-5 border bg-light">
+            <h3>This container has a padding-top, margin top and bottom, border, and background color. Class used are
+                .pt-3,
+                my-5, and
+                .border, and a .bg-light</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae architecto molestias ea
+                consequuntur,
+                cupiditate officia asperiores saepe hic possimus.</p>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Grid</h2>
+        <p>Bootstrap grid system is responsive and allows up to 12 columns.</p>
+        <div class="row">
+            <div class="col p-2 bg-light">Column 1</div>
+            <div class="col p-2 bg-dark text-light">Column 2</div>
+            <div class="col p-2 bg-light">Column 3</div>
+            <div class="col p-2 bg-dark text-light">Column 4</div>
+            <div class="col p-2 bg-light">Column 5</div>
+        </div>
+        <p>Bootstrap grid automatically makes the width of these columns equal.</p>
+    </div>
+    <div>
+        <h2>Bootstrap Responsive Grid</h2>
+        <p>Bootstrap's grid system is responsive, and columns will automatically rearrange itself depending on the
+            user's screen size display.</p>
+        <div class="row">
+            <div class="col-sm p-2 bg bg-light">Column 1</div>
+            <div class="col-sm p-2 bg bg-dark text-light">Column 2</div>
+            <div class="col-sm p-2 bg bg-light">Column 3</div>
+            <div class="col-sm p-2 bg bg-dark text-light">Column 4</div>
+            <div class="col-sm p-2 bg bg-light">Column 5</div>
+        </div>
+        <p>If the screen display goes below 576px, the columns will stack on each other and the class .col-sm will be
+            triggered.</p>
+    </div>
+    <div>
+        <h2>Bootrap Colors</h2>
+        <p>Bootstrap colors provides meaning in its colors.</p>
+        <p class="text-muted">This text is muted.</p>
+        <p class="text-primary">This text is important.</p>
+        <p class="text-success">This text indicates success.</p>
+        <p class="text-info">This text represents some information.</p>
+        <p class="text-warning">This text represents a warning.</p>
+        <p class="text-danger">This text represents danger.</p>
+        <p class="text-secondary">Secondary text.</p>
+        <p class="text-dark">This text is dark grey.</p>
+        <p class="text-body">Default body color (often black).</p>
+        <p class="text-light">This text is light grey (on white background).</p>
+        <p class="text-white">This text is white (on white background).</p>
+    </div>
+    <div>
+        <h2>Bootstrap Background Colors</h2>
+        <p>Bootstrap also provide color backgrounds on its conatainters. Text color can also be styled using .text-
+            class</p>
+        <p class="bg-primary text-white">This text is important.</p>
+        <p class="bg-success text-white">This text indicates success.</p>
+        <p class="bg-info text-white">This text represents some information.</p>
+        <p class="bg-warning text-white">This text represents a warning.</p>
+        <p class="bg-danger text-white">This text represents danger.</p>
+        <p class="bg-secondary text-white">Secondary background color.</p>
+        <p class="bg-dark text-white">Dark grey background color.</p>
+        <p class="bg-light text-dark">Light grey background color.</p>
+    </div>
+    <div>
+        <h2>Bootstrap Tables</h2>
+        <p>Bootstrap .table classes automatically provide basic styling to the table.Classes used are .table striped,
+            .table-bordered, .table-hover, .table-sm, and table colors class</p>
+        <div class="container-fluid pt-3">
+            <table class="table table-striped table-bordered table-hover table-sm">
+                <thead class="table-primary">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>Juan</td>
+                        <td>Dela Cruz</td>
+                        <td>juandelacruz@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Angel</td>
+                        <td>Cruz</td>
+                        <td>angelcruz@gmail.com</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Jose</td>
+                        <td>Santos</td>
+                        <td>josesantos@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>If a table is too long to fit in a screen, .table-responsive makes it scrollable.</p>
+            <div class="table-responsive">
+                <table class="table-bordered">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                            <th>Sample</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Juan</td>
+                            <td>Dela Cruz</td>
+                            <td>juandelacruz@gmail.com</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                            <td>Lorem, ipsum.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Images</h2>
+        <p>The image below is manipulated using classes .img-fluid for its responsiveness, .mx-auto and .d-block for
+            centering.</p>
+        <img class="img-fluid mx-auto d-block" src="13.jpg" alt="sea">
+    </div>
+    <div>
+        <h2>Bootstrap Alerts</h2>
+        <p>Creates predefined alert messages through bootstrap.</p>
+        <div class="alert alert-success">
+            <p><strong>Success!</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quaerat.
+            </p>
+        </div>
+        <div class="alert alert-warning">
+            <p><strong>Warning!</strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, quaerat.
+            </p>
+        </div>
+        <p>Class .alert-link to create matched color link.</p>
+        <div class="alert alert-danger">
+            <p><strong>Danger! </strong>Please read this <a href="#" class="alert-link">message</a>
+            </p>
+        </div>
+        <p>Alerts can be closed using class .alert-dismissible then adding a class .btn-close and
+            data-bs.dismissible="alert".</p>
+        <p>Classes .fade and .show is used to add a little transition.</p>
+        <div class="alert alert-success alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <p><strong>Success! </strong>You can now close this message.</p>
+        </div>
+        <div class="alert alert-warning alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <p><strong>Warning! </strong>You can now close this message.</p>
+        </div>
+        <div class="alert alert-danger alert-dismissible fade show">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <p><strong>Danger! </strong>You can now close this message.</p>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Buttons</h2>
+        <p>Buttons with background color, outline color, and hover effect.</p>
+        <div>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-danger btn-sm">Danger</button>
+        </div>
+        <p>Active and disabled buttons with the use of classes .active and .disabled</p>
+        <div>
+            <button type="button" class="btn btn-success active"> Active button</button>
+            <button type="button" class="btn btn-warning disabled "> Disabled button</button>
+        </div>
+        <div>
+            <p>Spinner buttons</p>
+            <div class="spinner-border text-success" style="width: 2rem; height: 2rem; "></div>
+            <div class="spinner-border text-danger" style="width: 2rem; height: 2rem; "></div>
+            <button class="btn btn-success">
+                <span class="spinner-border spinner-border-sm"></span>
+                Please wait.
+            </button>
+            <button class="btn btn-success disabled">
+                <span class="spinner-border spinner-border-sm"></span>
+                Please wait.
+            </button>
+        </div>
+        <div>
+            <p>Grower buttons</p>
+            <div class="spinner-grow text-success" style="width: 2rem; height: 2rem; "></div>
+            <div class="spinner-grow text-info" style="width: 2rem; height: 2rem; "></div>
+            <button class="btn btn-success">
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Please wait.
+            </button>
+            <button class="btn btn-success disabled">
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Please wait.
+            </button>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+
+</body>
