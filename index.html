@@ -329,7 +329,310 @@
     </div>
     <div>
         <h2>Bootstrap Progress Bars</h2>
-        
+        <p>Progress bar uses class .progress and .progress-bar class to the child element.</p>
+        <div class="progress">
+            <div class="progress-bar" style="width: 60%;">Sample</div>
+        </div>
+        <p>Colored progress bars with the use pf .bg-info, .bg-success, etc.</p>
+        <div class="progress">
+            <div class="progress-bar bg-info" style="width: 70%;">Colored Bar</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width: 60%;">Colored Bar</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-danger" style="width: 50%;">Colored Bar</div>
+        </div>
+        <p>Striped and animated progress bars use .progress-bar-striped and .progress-bar-animated</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%;">Animated progress
+                bar</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%;">Animated
+                progress bar</div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 80%;">Animated
+                progress bar</div>
+        </div>
+        <p>Multiple progress bars</p>
+        <div class="progress">
+            <div class="progress-bar bg-success" style="width: 50%;">Progress bar 1</div>
+            <div class="progress-bar bg-warning" style="width: 20%;">Progress bar 2</div>
+            <div class="progress-bar bg-danger" style="width: 10%;">Progress bar 3</div>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Pagination</h2>
+        <p>Bootstrap basic pagination uses .pagination, .page-item, and .page-link</p>
+        <ul class="pagination">
+            <li class="page-item"><a href="#" class="page-link">Back</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item active"><a href="#" class="page-link">3</a></li>
+            <li class="page-item disabled"><a href="#" class="page-link">Next</a></li>
+        </ul>
+        <p>Pagination alignment uses the class .justify-content-</p>
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a href="#" class="page-link">Back</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+        <ul class="pagination justify-content-end">
+            <li class="page-item"><a href="#" class="page-link">Back</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+        <p>Breadcrumb is another form of pagination</p>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">About</a></li>
+            <li class="breadcrumb-item"><a href="#">Contact</a></li>
+            <li class="breadcrumb-item"><a href="#">Portfolio</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Bootstrap List Groups</h2>
+        <div class="container">
+            <ul class="list-group">
+                <li class="list-group-item active">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+                <li class="list-group-item">Item 5</li>
+            </ul>
+            <p>List group with linked item. Classes used are .list-group, .list-group.item, .disabled, and
+                .list-group-flush</p>
+            <ul class="list-group list-group-flush ">
+                <a href="#" class="list-group-item disabled">Item 1</a>
+                <a href="#" class="list-group-item">Item 2</a>
+                <a href="#" class="list-group-item">Item 3</a>
+                <a href="#" class="list-group-item">Item 4</a>
+                <a href="#" class="list-group-item">Item 5</a>
+            </ul>
+            <p>Numbered list group with the use of contextual classes.</p>
+            <ul class="list-group list-group-numbered">
+                <li class="list-group-item active">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item bg-success">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+                <li class="list-group-item bg-warning">Item 5</li>
+            </ul>
+            <p>Linked group-list with contextual classes using.list-group-item-action</p>
+            <ul class="list-group list-group-flush ">
+                <a href="#" class="list-group-item .list-group-item-action bg-info disabled">Item 1</a>
+                <a href="#" class="list-group-item .list-group-item-action">Item 2</a>
+                <a href="#" class="list-group-item .list-group-item-action bg-success">Item 3</a>
+                <a href="#" class="list-group-item .list-group-item-action">Item 4</a>
+                <a href="#" class="list-group-item .list-group-item-action bg-danger">Item 5</a>
+            </ul>
+            <p>List group with badges using .badge class</p>
+            <ul class="list-group">
+                <a href="#" class="list-group-item justify-content-between align-items-center d-flex">Messages <span
+                        class="badge bg-primary">14</span></a>
+                <a href="#" class="list-group-item justify-content-between align-items-center d-flex">Promotions <span
+                        class="badge bg-primary">2</span></a>
+                <a href="#" class="list-group-item justify-content-between align-items-center d-flex">Drafts <span
+                        class="badge bg-primary">10</span></a>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Cards</h2>
+        <p>Bootstrap card uses .card class and .card-body as its child element.</p>
+        <div class="card">
+            <div class="card-header">Header</div>
+            <div class="card-body">Body</div>
+            <div class="card-footer">Footer</div>
+        </div>
+        <p>Contextual Cards</p>
+        <div class="card bg-success text-white">
+            <div class="card-body">Sample Card</div>
+        </div>
+        <div class="card bg-warning text-white">
+            <div class="card-body">Sample Card</div>
+        </div>
+        <div class="card bg-danger text-white">
+            <div class="card-body">Sample Card</div>
+        </div>
+        <p>Card titles, text, and links. Classes used are .card-title, .card-text, and .card-link</p>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, voluptate.</p>
+                <a href="#" class="card-link">Link 1</a>
+                <a href="#" class="card-link">Link 2</a>
+                <a href="#" class="card-link">Link 3</a>
+            </div>
+        </div>
+        <p>Card Images</p>
+        <div class="container-fluid">
+            <div class="card" style="width: 25%;">
+                <img class="card-img-top" src="me.jpg" style="width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Carlo de Leon</h4>
+                    <p class="card-text text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Voluptates,
+                        distinctio.</p>
+                    <div class="text-center">
+                        <a href="#" class="btn btn-primary">Contact Me!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Dropdown</h2>
+        <p>Bootstrap dropdown uses class .dropdown, .dropdown-menu, .dropdown-toggle, .dropdown-header,and
+            .dropdown-divider</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown
+                Button</button>
+            <ul class="dropdown-menu">
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 1</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Item 1</a></li>
+                <li><a href="#" class="dropdown-item">Item 2</a></li>
+                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                <li><a href="#" class="dropdown-item">Item 4</a></li>
+                <li>
+                    <hr href="#" class="dropdown-divider">
+                </li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 2</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Add item</a></li>
+            </ul>
+        </div>
+        <p>Dropdown position uses class .dropend and .dropstart</p>
+        <div class="dropend">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown
+                Button</button>
+            <ul class="dropdown-menu">
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 1</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Item 1</a></li>
+                <li><a href="#" class="dropdown-item">Item 2</a></li>
+                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                <li><a href="#" class="dropdown-item">Item 4</a></li>
+                <li>
+                    <hr href="#" class="dropdown-divider">
+                </li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 2</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Add item</a></li>
+            </ul>
+        </div>
+        <div class="dropstart text-center">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Dropdown
+                Button</button>
+            <ul class="dropdown-menu">
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 1</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Item 1</a></li>
+                <li><a href="#" class="dropdown-item">Item 2</a></li>
+                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                <li><a href="#" class="dropdown-item">Item 4</a></li>
+                <li>
+                    <hr href="#" class="dropdown-divider">
+                </li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 2</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Add item</a></li>
+            </ul>
+        </div>
+        <p>Right align the dropdown menu using class .dropdown-menu-end</p>
+        <div class="dropdown">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Lorem ipsum dolor
+                sit amet. Dropdown </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 1</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Item 1</a></li>
+                <li><a href="#" class="dropdown-item">Item 2</a></li>
+                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                <li><a href="#" class="dropdown-item">Item 4</a></li>
+                <li>
+                    <hr href="#" class="dropdown-divider">
+                </li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 2</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Add item</a></li>
+            </ul>
+        </div>
+        <p>Make it dropup instead of dropdown using class .dropup</p>
+        <div class="dropup">
+            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Lorem ipsum dolor
+                sit amet. Dropdown </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 1</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Item 1</a></li>
+                <li><a href="#" class="dropdown-item">Item 2</a></li>
+                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                <li><a href="#" class="dropdown-item">Item 4</a></li>
+                <li>
+                    <hr href="#" class="dropdown-divider">
+                </li>
+                <li>
+                    <h5 class="dropdown-header">Dropdown Header 2</a>
+                </li>
+                <li><a href="#" class="dropdown-item">Add item</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Bootstrap Collapse</h2>
+        <p>Collapse a certain div with a large amount of content using class .collapse</p>
+        <button data-bs-target="#demo" class="btn btn-primary" data-bs-toggle="collapse">Read more here.</button>
+        <div id="demo" class="collapse">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa soluta veritatis
+            hic earum nihil eum explicabo possimus placeat totam, dolores officiis autem odio aspernatur! Consectetur
+            fuga accusamus accusantium tempore alias cum ad dolore temporibus blanditiis molestiae explicabo consequatur
+            sed excepturi praesentium illum, adipisci quod, nostrum, quam optio. Ex, neque eius.
+        </div>
+        <p>Accordion Collapse with the use of card component.</p>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn" data-bs-target="#buttonOne" data-bs-toggle="collapse">Collapsible 1</button>
+                    <div id="buttonOne" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea libero odio
+                            eius quos assumenda deserunt amet rem blanditiis dignissimos eos.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn" data-bs-target="#buttonTwo" data-bs-toggle="collapse">Collapsible 2</button>
+                    <div id="buttonTwo" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea libero odio
+                            eius quos assumenda deserunt amet rem blanditiis dignissimos eos.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn" data-bs-target="#buttonThree" data-bs-toggle="collapse">Collapsible 3</button>
+                    <div id="buttonThree" class="collapse" data-bs-parent="#accordion">
+                        <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea libero odio
+                            eius quos assumenda deserunt amet rem blanditiis dignissimos eos.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
