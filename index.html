@@ -1017,7 +1017,7 @@
             <div class="border p-2">Box 33</div>
             <div class="border p-2">Box 34</div>
             <div class="border p-2">Box 35</div>
-        </div><br>       
+        </div><br>
         <div class="d-flex flex-wrap-reverse bg-light">
             <div class="border p-2">Box 1</div>
             <div class="border p-2">Box 2</div>
@@ -1054,7 +1054,7 @@
             <div class="border p-2">Box 33</div>
             <div class="border p-2">Box 34</div>
             <div class="border p-2">Box 35</div>
-        </div><br>       
+        </div><br>
         <div class="d-flex no-wrap bg-light">
             <div class="border p-2">Box 1</div>
             <div class="border p-2">Box 2</div>
@@ -1091,10 +1091,229 @@
             <div class="border p-2">Box 33</div>
             <div class="border p-2">Box 34</div>
             <div class="border p-2">Box 35</div>
-        </div>       
+        </div>
     </div><br>
     <div>
         <h2>Bootstrap Forms</h2>
+        <p>Stacked Form using class .form-control</p>
+        <form action="#">
+            <div class="mb-2">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-2">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-check mb-2">
+                <label for="form-check-label">Remember me
+                    <input type="checkbox" class="form-check-input" name="remember">
+                </label>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Log in</button>
+            </div>
+            <p>Inline Forms</p>
+            <form action="#">
+                <div class="row">
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col">
+                        <label for="password">Password</label>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+            </form>
+        </form>
+    </div>
+    <div>
+        <h2>Bootstrap 5 Select</h2>
+        <p>Select uses class .form-select</p>
+        <div>
+            <select class="form-select">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <p>Select sizing using .form-select-mb and .form-select-lg</p>
+        <div>
+            <select class="form-select form-select-sm mb-2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        <div>
+            <select class="form-select form-select-lg">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Checkbox and Radio Buttons using .form-check</h2>
+        <div class="form-check">
+            <div>
+                <input type="checkbox" class="form-check-input" name="checkbox1">
+                <label class="form-check-label">Checkbox 1</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" name="checkbox2">
+                <label class="form-check-label">Checkbox 2</label>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-input" name="checkbox3">
+                <label class="form-check-label">Checkbox 3</label>
+            </div>
+        </div>
+        <p>Radio Buttons</p>
+        <div class="form-check">
+            <div>
+                <input type="radio" class="form-check-input" name="radio1">
+                <label class="form-check-label">Radio 1</label>
+            </div>
+            <div>
+                <input type="radio" class="form-check-input" name="radio2">
+                <label class="form-check-label">Radio 2</label>
+            </div>
+            <div>
+                <input type="radio" class="form-check-input" name="radio3">
+                <label class="form-check-label">Radio 3</label>
+            </div>
+            <p>Toggle Switch</p>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" value="yes" name="toggle">
+                <label class="form-check-label">Toggle Switch</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Range</h2>
+        <p>Form range using .form-range</p>
+        <div>
+            <label class="form-label">Form Range</label>
+            <input type="range" class="form-range">
+        </div>
+        <p>Form range with step intervals using step attribute</p>
+        <div>
+            <label class="form-label">Form Range</label>
+            <input type="range" class="form-range" step="10">
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Input Groups</h2>
+        <p>Input groups using class .input-group</p>
+        <div class="row">
+            <div class="col input-group">
+                <span class="input-group-text">Name</span>
+                <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col input-group">
+                <span class="input-group-text">Last Name</span>
+                <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Bootstrap Floating Labels</h2>
+        <p>Floating/Animated Labels using .form-floating</p>
+        <div class="form-floating mb-2">
+            <input type="text" class="form-control" placeholder="Enter Email" id="email">
+            <label for="email">Email</label>
+        </div>
+        <div class="form-floating mb-2">
+            <input type="password" class="form-control" placeholder="Enter Password" id="password">
+            <label for="password">Password</label>
+        </div>
+        <div class="form-floating mb-2">
+            <input type="text" class="form-control" placeholder="Comment" id="comment">
+            <label for="comment">Comment</label>
+        </div>
+    </div>
+    <div>
+        <h2>Form Validation</h2>
+        <p>Form validation using class .was-validated or .needs-validation to the form element.</p>
+        <form action="#" class="was-validated">
+            <div>
+                <label for="userName">Username:</label>
+                <input type="text" class="form-control" id="userName" placeholder="Enter Username" required>
+                <div class="valid-feedback">Valid input</div>
+                <div class="invalid-feedback">Invalid input</div>
+            </div>
+            <div>
+                <label for="passWord">Password:</label>
+                <input type="password" class="form-control" id="passWord" placeholder="Enter Password" required>
+                <div class="valid-feedback">Valid input</div>
+                <div class="invalid-feedback">Invalid input</div>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="myCheck" required>
+                <label class="form-check-label" for="myCheck">I have read the...</label>
+                <div class="valid-feedback">Valid input</div>
+                <div class="invalid-feedback">Invalid input</div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <div>
+        <h2>Bootstrap 5 Grid System</h2>
+        <p>Basically, bootstrap grid system manipulates the responsiveness of the content using .col-*-* (1st* repesents
+            the reponsiveness/ what device size will trigger the event. 2nd* represents the number of columns that will
+            be used using bootstrap grid)</p>
+        <p>Stacked to Horizontal grid. Small sized(less than or equal to 576px) screens will make the two columns stack
+            together as one.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 bg-light">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis.</p>
+                </div>
+                <div class="col-sm-6 bg-dark text-light">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, corporis.</p>
+                </div>
+            </div>
+        </div>
+        <p>Auto layout columns using col-sm will make these 4 columns stack together if the screen size is less than
+            576px.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 bg-light">Grid 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                    nisi!</div>
+                <div class="col-sm-2 bg-dark text-light">Grid 2 Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Vitae, nisi!</div>
+                <div class="col-sm-2 bg-light">Grid 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae,
+                    nisi!</div>
+                <div class="col-sm-4 bg-dark text-light">Grid 4 Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Vitae, nisi!</div>
+            </div>
+        </div>
+        <p>The two columns here will be 75%/25% on medium devices and will be 50%/50% or equal on small devices, and
+            will stack on even extra small device.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-sm-6 bg-light">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deserunt.</p>
+                </div>
+                <div class="col-md-3 col-sm-6 bg-dark text-light">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, distinctio!</p>
+                </div>
+            </div>
+        </div>
+        <p>At large device, the two column will be 25%/75%, on medium device, 50%/50%, and on small device it the column
+            will be 75%/25%</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-9 bg-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, suscipit?
+                </div>
+                <div class="class-col-lg-9 col-md-6 col-sm-3 bg-dark text-light">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dignissimos,
+                    maxime!</div>
+            </div>
+        </div>
     </div>
 
 
